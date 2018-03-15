@@ -17,45 +17,43 @@ public class Garage {
 
 	public int bill(Vehicle specificVehicle) {
 		for (Vehicle vehicle : vehiclelist) {
-			
-			if(vehicle == specificVehicle) {
-				
-			if (vehicle instanceof Car) {
 
-				Car testCar = (Car) vehicle;
-				return testCar.getnumberofpassengers() * 10;
+			if (vehicle == specificVehicle) {
 
-			}
-			if (vehicle instanceof Motorbike) {
+				if (vehicle instanceof Car) {
 
-				Motorbike testMotor = (Motorbike) vehicle;
-				return testMotor.getnumberofwheels() * 10;
+					Car testCar = (Car) vehicle;
+					return testCar.getnumberofpassengers() * 10;
 
-			}
-			if (vehicle instanceof Van) {
+				}
+				if (vehicle instanceof Motorbike) {
 
-				
-				Van testMotor = (Van) vehicle;
-				return testMotor.getweight() * 10;
+					Motorbike testMotor = (Motorbike) vehicle;
+					return testMotor.getnumberofwheels() * 10;
 
-			}
+				}
+				if (vehicle instanceof Van) {
+
+					Van testMotor = (Van) vehicle;
+					return testMotor.getweight() * 10;
+
+				}
 			}
 		}
 		return 0;
 	}
-	
+
 	public ArrayList<Vehicle> emptygarage() {
-	
+
 		vehiclelist.clear();
 		return vehiclelist;
-		
-	}
-	
-	public ArrayList<Vehicle> removevehicle(Vehicle Vehicle) {
-		
-		vehiclelist.remove(Vehicle);
-		return vehiclelist;
-		
-	}
+
 	}
 
+	public ArrayList<Vehicle> removevehicle(Vehicle Vehicle) {
+
+		vehiclelist.remove(Vehicle);
+		return vehiclelist;
+
+	}
+}

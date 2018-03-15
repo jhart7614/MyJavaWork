@@ -16,8 +16,8 @@ public String toString() {
 		return "Year: " + year + " Brand: " + brand + " Fuel Consumption: " + fuelconsumption + " Number of Passengers:" + numberofpassengers;
 	}
 	
-public int getnumberofpassengers() {
+	public int getnumberofpassengers() {
 
-	return numberofpassengers;
-}
+		return numberofpassengers;
+	}
 }
