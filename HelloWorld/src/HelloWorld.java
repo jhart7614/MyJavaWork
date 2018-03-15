@@ -3,6 +3,8 @@ public class HelloWorld {
 	
 	public static void main(String[] args) {
 
+		
+		//testing the hello world print statement
 		System.out.println("HelloWorld!");  //HELLO WORLD
 		String b = "HelloWorld!"; //ASSINGMANET
 		System.out.println(b); //assignment
